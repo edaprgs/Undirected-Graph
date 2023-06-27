@@ -79,6 +79,7 @@ void constructMinimumSpanningTree(vector<Edge>& edges) {
     vector<Edge> selectedEdges;
 
     cout << "Progress of Minimum Spanning Tree Construction:\n";
+    cout << "(Source-Destination-Weight)\n";
 
     for (const auto& edge : edges) {
         int srcRoot = find(parent, edge.src);
@@ -153,14 +154,10 @@ int main() {
         if (!visited[vertex]) {
             depthFirstSearch(edges, visited, vertex);
         }
-    }
+    } cout << "\n\n";
 
 /* MINIMUM COST SPANNING TREE USING KRUSKAL'S ALGORITHM */
     cout << "Bonus Question - Minimum Cost Spanning Tree using Kruskal's Algorithm:\n";
-    for (const auto& edge : edges) {
-        cout << "Vertex " << edge.src << " is connected to Vertex " << edge.dest
-             << " with weight of " << edge.weight << endl;
-    } cout << endl;
     constructMinimumSpanningTree(edges);
 
     return 0;
