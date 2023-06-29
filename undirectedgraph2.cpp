@@ -1,5 +1,6 @@
 /* 2021-1574 Eda Grace J. Paragoso
-2021-0622 Nancy M. Sayson */
+2021-0622 Nancy M. Sayson
+2021-1853 Zeus Morley S. Pineda */
 
 /* EXERCISE #1 output to the answers of Problem #4 and Bonus Question #1 */
 
@@ -156,8 +157,8 @@ int main() {
         }
     } cout << "\n\n";
 
-/* MINIMUM COST SPANNING TREE USING KRUSKAL'S ALGORITHM */
-    cout << "Bonus Question - Minimum Cost Spanning Tree using Kruskal's Algorithm:\n";
+/* BONUS QUESTION #1 MINIMUM COST SPANNING TREE USING KRUSKAL'S ALGORITHM */
+    cout << "Bonus Question #1: Minimum Cost Spanning Tree using Kruskal's Algorithm:\n";
     constructMinimumSpanningTree(edges);
 
     return 0;
